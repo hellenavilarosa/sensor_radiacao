@@ -20,3 +20,6 @@ Para que seja possível conferir se a placa fotovoltaica está suja, é necessá
  	Com o elevado custo de um sensor de radiação fez-se necessário construir um módulo com um custo muito mais baixo, sendo assim, com base no artigo (LINK DO ARTIGO), 
  
 
+FABRICAÇÃO DO SENSOR 
+Utilizou-se um fototransistor, onde uma excitação de luminosidade na base do transistor gera uma corrente entre o coletor e emissor, que é proporcional a incidência de radiação. Utilizou-se fototransistor PT204C pois 
+

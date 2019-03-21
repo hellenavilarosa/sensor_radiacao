@@ -1,5 +1,5 @@
-# sensor_radiacao
-PI 3- Sensor radiação para aplicação em placas fotovoltaicas 
+# Desenvolvimento de um sensor de radiação solar de baixo custo para aplicações em placas fotovoltaicas
+Este projeto tem como objetivo o desenvolvimento de um sensor de radiação solar de baixo custo para aplicações em placas fotovoltaicas.Desenvolvido na disciplina de Projeto Integrador 3 do curso de graduação em Engenharia Eletrônica do Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina (IFSC). 
 
 ## Table of Contents 
 1. [Sensor de radiação](#register-convention)

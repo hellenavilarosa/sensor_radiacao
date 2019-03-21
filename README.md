@@ -15,4 +15,8 @@ This RISC-V ELF psABI specification document is
  &copy; 2016 Palmer Dabbelt <palmer@dabbelt.com>
  &copy; 2016 Stefan O'Rear <sorear2@gmail.com>
  
- ## <a name=default-abis-and-c-type-sizes></a> Default ABIs and C type sizes
+ ## <a name=default-abis-and-c-type-sizes></a> Sensor de Radiação Solar 
+ Para que pudesse conferir se a placa fotovoltaica está suja, se fez necessário um sensor de radiação para fazer a comparação entre energia armazenada e radiação, onde muita radiação e pouca energia armazenada informa que a placa está suja.
+ Com o elevado custo de um sensor de radiação 
+ 
+

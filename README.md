@@ -17,6 +17,6 @@ This RISC-V ELF psABI specification document is
  
  ## <a name=default-abis-and-c-type-sizes></a> Sensor de Radiação Solar 
 Para que seja possível conferir se a placa fotovoltaica está suja, é necessário ter um sensor de radiação que se possa fazer a comparação entre a radiação absorvida pelas placas e a radiação captada pelo sensor, onde, muita radiação e pouca energia gerada pelas placas informa que a placa pode estar suja e precisa de manutenção.
- 	Com o elevado custo de um sensor de radiação pa
+ 	Com o elevado custo de um sensor de radiação fez-se necessário construir um módulo com um custo muito mais baixo, sendo assim, com base no artigo (LINK DO ARTIGO), 
  
 

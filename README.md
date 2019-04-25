@@ -30,10 +30,11 @@ Este projeto dividiu-de em (QUANTOS?) etapas, sendo elas:
  
  ## <a name=default-abis-and-c-type-sizes></a> Sensor de Radiação Solar 
 Placas fotovoltaicas estão sempre em desenvolvimento e avanços, uma delas é a inserção de sensores que possam captar a radiação para verificar se a painel está fornecendo a energia máxima. Fatores externos podem alterar a eficiência de um painel, e um fator bastante importante que tem sido deixado de lado é o "fator sujeira". Elementos como o ácaro, folhas, lama, restos de seres vivos e entre outros, podem formar uma camada de sujeira com o passar do tempo necessitando assim manutenção periódica do painel.
-
+	
 ![painelsujo](https://user-images.githubusercontent.com/38983849/56757448-a1304400-676a-11e9-8ecd-1c92633be9c4.jpg)
-Figura 1. Painel fotovoltaico sujo.
 
+Figura 1. Painel fotovoltaico sujo.
+	
 Para que seja possível conferir se o painel está com essa camada de sujeira, é necessário ter um sensor de radiação que se possa fazer a comparação entre a potência gerada pelo painel fotovoltaico e a radiação captada pelo sensor, onde, muita radiação e pouca energia gerada pelos painéis informa que a placa pode estar suja e precisa de manutenção.
  Com o elevado custo de um sensor de radiação fez-se necessário construir um módulo com um custo muito mais baixo, e com base no artigo (LINK DO ARTIGO), foi possível fazer implementação e testes.
 

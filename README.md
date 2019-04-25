@@ -7,7 +7,7 @@ Este projeto tem como objetivo o desenvolvimento de um sensor de radiação sola
 * Monitorar a quantidade de radiação solar medida pelo sensor para comparação com a potência gerada pela placa fotovoltaica, e assim verificar se a placa fotovoltaica está suja.
 * Desenvolver um circuito de baixo custo, que não precise de muita manutenção.
 
-# Etapas de desenvolvimento do projeto (FAZENDO)
+# Etapas de desenvolvimento do projeto 
 
 Este projeto dividiu-de em (QUANTOS?) etapas, sendo elas:
 1. Análise bibliográfica sobre energia fotovoltaica e radiação solar, averiguando informações sobre modelos de sensores que pudessem ter baixo custo.
@@ -37,6 +37,6 @@ Para que seja possível conferir se a placa fotovoltaica está suja, é necessá
  	Com o elevado custo de um sensor de radiação fez-se necessário construir um módulo com um custo muito mais baixo, sendo assim, com base no artigo (LINK DO ARTIGO), 
  
 
-#FABRICAÇÃO DO SENSOR 
+##FABRICAÇÃO DO SENSOR 
 Utilizou-se um fototransistor, onde uma excitação de luminosidade na base do transistor gera uma corrente entre o coletor e emissor, que é proporcional a incidência de radiação. Utilizou-se fototransistor PT204C pois 
 

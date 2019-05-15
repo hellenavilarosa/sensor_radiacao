@@ -54,7 +54,7 @@ Figura 4. Diagrama do espectro da radiação solar.
 
 O objetivo deste trabalho é projetar e construir um sensor de radiação solar capaz de coletar dados de irradiância usando componentes de baixo custo, e com base no artigo "DESIGN OF A LOW-COST SENSOR FOR SOLAR IRRADIANCE" disponível em: (http://twixar.me/8Zdn), foi possível fazer implementação e testes.
 
-##FABRICAÇÃO DO SENSOR 
+## FABRICAÇÃO DO SENSOR 
 Utilizou-se um fototransistor, onde uma excitação de luminosidade na base do transistor gera uma corrente entre o coletor e emissor, que é proporcional a incidência de radiação. Utilizou-se fototransistor PT204C pois 
 
 

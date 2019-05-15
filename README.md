@@ -46,13 +46,13 @@ Para que seja possível conferir se o painel está com essa camada de sujeira, �
 Figura 3. Pyranometro SP Lite2.
 
 É importante salientar que a energia solar não depende da intensidade luminosa do Sol. Pois o dispositivo usado para determinar
-a quantidade de energia solar, concentrada em um ponto e mede a radiação (radiometria) ao invés do fluxo luminoso (fotometria). A figura abaixo mostra a energia contida no espectro solar (área sob a curva). Pode ser visto que a porção principal da energia está contida entre 300nm e 1300 nm de comprimento de onda.
+a quantidade de energia solar, concentra em um ponto e mede a radiação (radiometria) ao invés do fluxo luminoso (fotometria). A figura abaixo mostra a energia contida no espectro solar (área sob a curva). Pode ser visto que a porção principal da energia está contida entre 300nm e 1300 nm de comprimento de onda.
 
 ![image](https://user-images.githubusercontent.com/38983849/57805452-4c616700-7733-11e9-825e-3d7943a6d149.png)
 
 Figura 4. Diagrama do espectro da radiação solar.
 
- Com o elevado custo de um sensor de radiação fez-se necessário construir um módulo com um custo muito mais baixo, e com base no artigo (LINK DO ARTIGO), foi possível fazer implementação e testes.
+O objetivo deste trabalho é projetar e construir um sensor de radiação solar capaz de coletar dados de irradiância usando componentes de baixo custo, e com base no artigo "DESIGN OF A LOW-COST SENSOR FOR SOLAR IRRADIANCE" disponível em: (http://twixar.me/8Zdn), foi possível fazer implementação e testes.
 
 ##FABRICAÇÃO DO SENSOR 
 Utilizou-se um fototransistor, onde uma excitação de luminosidade na base do transistor gera uma corrente entre o coletor e emissor, que é proporcional a incidência de radiação. Utilizou-se fototransistor PT204C pois 

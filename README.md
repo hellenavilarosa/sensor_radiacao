@@ -46,8 +46,7 @@ Para que seja possível conferir se o painel está com essa camada de sujeira, �
 Figura 3. Pyranometro SP Lite2.
 
 É importante salientar que a energia solar não depende da intensidade luminosa do Sol. Pois o dispositivo usado para determinar
-a quantidade de energia solar, concentrada em um ponto e mede a radiação (radiometria) ao invés do fluxo luminoso (fotometria).  
-A fugura abaixo mostra a energia contida no espectro solar (área sob a curva). Pode ser visto que a porção principal da energia está contida entre 300nm e 1300 nm de comprimento de onda.
+a quantidade de energia solar, concentrada em um ponto e mede a radiação (radiometria) ao invés do fluxo luminoso (fotometria). A figura abaixo mostra a energia contida no espectro solar (área sob a curva). Pode ser visto que a porção principal da energia está contida entre 300nm e 1300 nm de comprimento de onda.
 
 ![image](https://user-images.githubusercontent.com/38983849/57805452-4c616700-7733-11e9-825e-3d7943a6d149.png)
 

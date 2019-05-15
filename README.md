@@ -42,6 +42,7 @@ Figura 2. Painel fotovoltaico limpo.
 Para que seja possível conferir se o painel está com essa camada de sujeira, é necessário ter um sensor de radiação que se possa fazer a comparação entre a potência gerada pelo painel fotovoltaico e a radiação captada pelo sensor, onde, muita radiação e pouca energia gerada pelos painéis informa que a placa pode estar suja e precisa de manutenção. O sensor utilizado é o Piranometro da SP Lite2 que será utilizado como um modelo de comparação de resultados com o sensor projetado.
 
 ![01_Pyranometers_01_SP_Lite2_01_SP_Lite2](https://user-images.githubusercontent.com/38983849/57800798-a0b31980-7728-11e9-8bb7-bd36bb760ba3.jpg)
+
 Figura 3. Pyranometro SP Lite2.
 
  Com o elevado custo de um sensor de radiação fez-se necessário construir um módulo com um custo muito mais baixo, e com base no artigo (LINK DO ARTIGO), foi possível fazer implementação e testes.
@@ -51,16 +52,34 @@ Utilizou-se um fototransistor, onde uma excitação de luminosidade na base do t
 
 
 ![image](https://user-images.githubusercontent.com/38983849/57803240-50d75100-772e-11e9-8ea3-85fb9d9c09a3.png)
+
 Figura 4. PT204C
 
+![image](https://user-images.githubusercontent.com/38983849/57804439-0905f900-7731-11e9-99f2-2859ad877faf.png)
+
+Figura 5. Esquemático do circuito.
+
 ![IMG_1798](https://user-images.githubusercontent.com/38983849/57803105-f50cc800-772d-11e9-8c53-bc7c3d565710.JPG)
-Figura 5. Cano com 25 camadas de teflon.
+
+Figura 6. Cano com 25 camadas de teflon.
 
 ![arduino_uno_r3_-_cabo_usb_-_design_italy](https://user-images.githubusercontent.com/38983849/57801620-795d4c00-772a-11e9-94aa-d10dd6a0a4a1.jpg)
-Figura 6. Arduino UNO.
+
+Figura 7. Arduino UNO.
 
 ![rtc](https://user-images.githubusercontent.com/38983849/57801611-75c9c500-772a-11e9-8361-6e29b61a50e9.jpg)
-Figura 7. RTC.
+
+Figura 8. RTC.
 
 ![716up2f1W4L _SX425_](https://user-images.githubusercontent.com/38983849/57802628-cb06d600-772c-11e9-9872-bbace843cc2c.jpg)
-Figura 8. SD CARD.
+
+Figura 9. SD CARD.
+
+![photo_2019-05-15_16-02-15](https://user-images.githubusercontent.com/38983849/57803374-a27fdb80-772e-11e9-9c78-62f6486b7f57.jpg)
+
+Figura 10. Sensor de radiação.
+
+![IMG_20190430_121725_767](https://user-images.githubusercontent.com/38983849/57803650-49fd0e00-772f-11e9-8ed6-2437c388a44c.jpg)
+
+Figura 11. Teste do sensor de radiação.
+

@@ -18,14 +18,14 @@
 #include <string.h>
 
 
-#define HORA		10
-#define MINUTO		56
+#define HORA		14
+#define MINUTO		42
 #define SEGUNDO		00
 
 #define ANO			19
 #define MES			6
-#define DIA			3
-#define DIA_SEMANA	1
+#define DIA			4
+#define DIA_SEMANA	2
 
 
 #define LED_PIN	PB0
@@ -56,9 +56,9 @@ int main(){
 	FATFS card;
 	FIL file;
 	char string[64];
-	uint16 bytesWritten,result=0,n=0;
+	uint16_t bytesWritten,result=0,n=0,corr_n=0,corr_d=0;
 	//sensor efeito hall
-	uint16_t tens_hall=0,corrente_hall;
+	uint32_t tens_hall=0,corrente_hall=0,AD_hall=0;
 
 	memset(string, 0, sizeof(string));
 
@@ -108,11 +108,19 @@ int main(){
 	while(1){
 
 			ds1307GetTime(&(dados_t.tempo_t.hora),&(dados_t.tempo_t.minuto) ,&(dados_t.tempo_t.segundo),&(dados_t.tempo_t.am_pm)); // define  funfa??
-			tens_hall=(5*(dados_t.dado_corrente>>3))*10/1024;
-			corrente_hall=(tens_hall/0.066);
+			//sensor efeito hall
+			AD_hall=(dados_t.dado_corrente>>3);
+			printf("ADC_hall: %d\n", AD_hall);
 
+			tens_hall=(5*AD_hall*1000)/1024;
+
+			printf("tens_hall: %d\n", tens_hall);
+			corrente_hall=((2485-tens_hall)*500)/33;
+			printf("corrente_hall: %d\n", corrente_hall);
+			corr_n=(corrente_hall/1000);
+			corr_d=(corrente_hall%1000);
 			// Creating a file
-			n = snprintf(string, 64, "%d; %d.%d ; %d:%d:%d\n", (dados_t.dado_radiacao>>3),corrente_hall/10,corrente_hall%10, dados_t.tempo_t.hora,dados_t.tempo_t.minuto, dados_t.tempo_t.segundo);
+			n = snprintf(string, 64, "%d; %d.%d; %d:%d:%d\n",(dados_t.dado_radiacao>>3),corr_n ,corr_d, dados_t.tempo_t.hora,dados_t.tempo_t.minuto, dados_t.tempo_t.segundo);
 
 			printf("SNPRINTF: %s\n", string);
 			result = f_write(&file, string, strlen(string), &bytesWritten);

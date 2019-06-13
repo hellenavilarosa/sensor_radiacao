@@ -4,7 +4,7 @@ Este projeto tem como objetivo o desenvolvimento de um sensor de radiação sola
 
 # Especificações do Projeto
 
-* Monitorar a quantidade de radiação solar medida pelo sensor para comparação com a potência gerada pela placa fotovoltaica, e assim verificar se a placa fotovoltaica está suja.
+* Monitorar a radiação solar medida pelo sensor para comparação com a potência gerada pela placa fotovoltaica, e assim verificar se a placa fotovoltaica está suja.
 * Desenvolver um circuito de baixo custo, que não precise de muita manutenção.
 
 # Etapas de desenvolvimento do projeto 
@@ -39,7 +39,7 @@ Figura 1. Painel fotovoltaico sujo.
 
 Figura 2. Painel fotovoltaico limpo.
 	
-Para que seja possível conferir se o painel está com essa camada de sujeira, é necessário ter um sensor de radiação que se possa fazer a comparação entre a potência gerada pelo painel fotovoltaico e a radiação captada pelo sensor, onde, muita radiação e pouca energia gerada pelos painéis informa que as placas podem estar sujas e precisam de manutenção. O sensor utilizado é o Piranometro da SP Lite2 que será utilizado como um modelo de comparação de resultados com o sensor projetado.
+Para que seja possível conferir se o painel está com essa camada de sujeira, é necessário um sensor de radiação que se possa fazer a comparação entre a potência gerada pelo painel fotovoltaico e a radiação captada pelo sensor, onde, muita radiação e pouca energia gerada pelos painéis informa que as placas podem estar sujas e precisam de manutenção. O sensor utilizado é o Piranometro da SP Lite2 que será utilizado como um modelo de comparação de resultados com o sensor projetado.
 
 ![01_Pyranometers_01_SP_Lite2_01_SP_Lite2](https://user-images.githubusercontent.com/38983849/57800798-a0b31980-7728-11e9-8bb7-bd36bb760ba3.jpg)
 

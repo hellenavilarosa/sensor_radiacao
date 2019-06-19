@@ -69,9 +69,29 @@ A estrutura física do sensor foi composta por uma placa com o circuito da Figur
 ![posicao_pt](https://user-images.githubusercontent.com/39311424/59780637-b4eeb700-9290-11e9-90df-bb775ca7bf03.png)
 Figura 6. Posição do PT204C no cano de PVC.
 
+Para que o sensor não saturasse foi utilizado um atenuador feito com teflon. Utilizou-se 24 camadas de teflon, dispostas uma em cima da outra como mostra a Figura 7, e após isso foi colocado um peso em cima deixando lá por 24h, para que saísse todo o ar entre as camadas. 
+
+![camadas_teflon](https://user-images.githubusercontent.com/39311424/59785806-31d35e00-929c-11e9-9cad-18f3738e99cc.png)
+
+Figura 7. Camadas de teflon.
+
+Após colocar as camadas de teflon no cano de PVC, obtivemos como resultado a Figura 8. Com as camadas de teflon obtivemos uma atenuação de 92%, ou seja o máximo de radiação que ele conseguirá medir sem saturar é de 1242 W/m², o suficiente para a cidade de Florianópolis-SC.
+Como suporte para o sensor de radiação utilizou-se uma tampa de cano de PVC com um furo central onde foi colocado o sensor.
 ![IMG_1798](https://user-images.githubusercontent.com/38983849/57803105-f50cc800-772d-11e9-8c53-bc7c3d565710.JPG)
 
-Figura 6. Cano com 25 camadas de teflon.
+Figura 8. Sensor com atenuador de teflon.
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------
+
 
 ![arduino_uno_r3_-_cabo_usb_-_design_italy](https://user-images.githubusercontent.com/38983849/57801620-795d4c00-772a-11e9-94aa-d10dd6a0a4a1.jpg)
 

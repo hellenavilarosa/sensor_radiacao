@@ -77,12 +77,18 @@ Figura 7. Camadas de teflon.
 
 Após colocar as camadas de teflon no cano de PVC, obtivemos como resultado a Figura 8. Com as camadas de teflon obtivemos uma atenuação de 92%, ou seja o máximo de radiação que ele conseguirá medir sem saturar é de 1242 W/m², o suficiente para a cidade de Florianópolis-SC.
 Como suporte para o sensor de radiação utilizou-se uma tampa de cano de PVC com um furo central onde foi colocado o sensor.
+
 ![IMG_1798](https://user-images.githubusercontent.com/38983849/57803105-f50cc800-772d-11e9-8c53-bc7c3d565710.JPG)
 
 Figura 8. Sensor com atenuador de teflon.
 
 
+Como o sensor ficará ao ar livre optamos por colocar uma (CUPULA DE LAMPADA DE LED????NAO SEI O NOME DISSO) vedada com silicone para proteger o sensor da chuva e da sujeira que poderia ficar acumulada no teflon. 
+ A Figura 9 mostra o resultado final da produção do sensor, onde uma case vedada com silicone foi utilizada para armazenar o microcontrolador e a bateria utilizada, para que estes também ficassem protegidos da chuva. 
 
+![cupula_sensor](https://user-images.githubusercontent.com/39311424/59786510-ca1e1280-929d-11e9-92bc-f13df9cfdb1d.png)
+
+Figura 9. Protótipo Sensor de Radiação.
 
 
 

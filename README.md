@@ -94,7 +94,14 @@ Figura 9. Protótipo Sensor de Radiação.
 
 
 
+## SOFTWARE
+Para aquisição de dados foi desenvolvido um código em C utilizando o microcontrolador ATMEGA328P. Utilizando o conversor analógico - digital do microcontrolador, foi possível adquirir os resultados do sensor de radiação e da potência da placa fotovoltaica. 
+Para que fosse possível obter resultados satisfatórios, utilizou-se um RTC(Real Time Clock) para que ficasse salvo em qual horário foi adquirido o valor do sensor de radiação, e um módulo com cartão de memória para salvar estes dados. 
+Ou seja, a cada 30 segundos é realizado uma média móvel de 8 valores adquiridos pelo ADC do microcontrolador (que representam os valores do sensor de radiação) e após isso é gravado em uma planilha no cartão de memória o valor dos ADCs e o horário. Com isso obtém-se uma planilha com os dados de radiação e potência da placa fotovoltaica. 
 
+FOTO DA PLAQUINHA
+
+Para que fosse possível obter os dados da potência da placa fotovoltaica, utilizou como carga um circuito composto por 3 resistores em série: 2 resistores no valor de 20 ohms e um no valor de 3,19 ohms. Sendo assim, foi medido a tensão em cima do resistor de 3,19 ohms utilizando o ADC do microcontrolador e com isso obtivemos o valor da corrente deste circuito, sendo possível fazer o cálculo da potência consumida pela placa fotovoltaica. Foi medido a tensão no resistor de menor valor pois o máximo de tensão que pode ser lido pelo ADC é de 5V. 
 
 --------------------------------------------
 

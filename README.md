@@ -66,7 +66,8 @@ Figura 5. Esquemático do circuito.
 Utilizando o PT204C e está configuração, a  máxima radiação que ele consegue medir é de 50w/m2 com uma tensão de 5v. Porém esse valor é muito menor do que a radiação que precisa medir em Florianópolis-SC, e para isso precisou utilizar um atenuador para que o sensor não saturasse.
 A estrutura física do sensor foi composta por uma placa com o circuito da Figura 1, um cano de PVC e camadas de teflon. O fototransistor foi colocado no centro de um cano de PVC de 24mm a 10mm do topo do cano como mostra a Figura 2.
 
-IBAGEM
+![posicao_pt](https://user-images.githubusercontent.com/39311424/59780637-b4eeb700-9290-11e9-90df-bb775ca7bf03.png)
+Figura 6. Posição do PT204C no cano de PVC.
 
 ![IMG_1798](https://user-images.githubusercontent.com/38983849/57803105-f50cc800-772d-11e9-8c53-bc7c3d565710.JPG)
 

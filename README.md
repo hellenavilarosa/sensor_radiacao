@@ -112,7 +112,7 @@ Para que fosse possível detectar se a placa fotovoltaica está suja ou não, ut
 
 Para caracterização desta aplicação, foi colocado o sensor de radiação juntamente com a placa fotovoltaica limpa para testes em um dia de sol, conforme mostra a Figura 10 como resultados obteve-se o gráfico da Figura 11.
 
-![PainelLimpo21-06-2019](https://user-images.githubusercontent.com/39311424/60205997-04049100-9829-11e9-9201-de7cea07306d.jpg)
+![limpo](https://user-images.githubusercontent.com/39311424/60206261-7c6b5200-9829-11e9-9848-ad91c753ccd0.png)
 
 Figura 11- Testes com o painel fotovoltaico limpo
 

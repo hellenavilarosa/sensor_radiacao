@@ -110,18 +110,23 @@ Para que fosse possível obter os dados da potência da placa fotovoltaica, util
 ## RESULTADOS E COMPARAÇÕES COM A PLACA FOTOVOLTAICA
 Para que fosse possível detectar se a placa fotovoltaica está suja ou não, utilizou o sensor de radiação fabricado em comparação com a potência fornecida da placa fotovoltaica. Onde muita radiação e baixa potência fornecida, conclui-se que a placa fotovoltaica está suja ou está com algum objeto em cima, atrapalhando o fornecimento de energia.
 
-Para caracterização desta aplicação, foi colocado o sensor de radiação juntamente com a placa fotovoltaica limpa para testes em um dia de sol, como resultados obteve-se o gráfico da Figura 10.
+Para caracterização desta aplicação, foi colocado o sensor de radiação juntamente com a placa fotovoltaica limpa para testes em um dia de sol, conforme mostra a Figura 10 como resultados obteve-se o gráfico da Figura 11.
+
+![PainelLimpo21-06-2019](https://user-images.githubusercontent.com/39311424/60205997-04049100-9829-11e9-9201-de7cea07306d.jpg)
+
+Figura 11- Testes com o painel fotovoltaico limpo
 
 ![radiacao_21_06](https://user-images.githubusercontent.com/39311424/60204266-d3225d00-9824-11e9-9630-c593283e9f5b.png)
 
-Figura 10- Grafico potencia da placa e radiação solar
+Figura 11- Grafico potencia da placa e radiação solar
 
-Este gráfico da Figura 10 foi composto por valores do ADC do microcontrolador (de 0 a 1024), a cada 10 segundos o microcontrolador grava no cartão de memória a leitura da radiação e da potência da placa fotovoltaica. Onde a curva em azul representa a potência e em vermelho a radiação. Neste gráfico o painel fotovoltaico estava limpo, sendo assim, pode-se perceber que a potência fornecida é maior do que a radiação medida pelo sensor. 
+Este gráfico da Figura 11 foi composto por valores do ADC do microcontrolador (de 0 a 1024), a cada 10 segundos o microcontrolador grava no cartão de memória a leitura da radiação e da potência da placa fotovoltaica. Onde a curva em azul representa a potência e em vermelho a radiação. Neste gráfico o painel fotovoltaico estava limpo, sendo assim, pode-se perceber que a potência fornecida é maior do que a radiação medida pelo sensor. 
 
-O valor da potência e da radiação possuem uma diferença no valor da amplitude por conta de a potência fornecida não ser uma curva linear, como consegue-se observar  na Figura 11. Onde a máxima potência fornecida será quando tiver uma determinada tensão Vmpp, que é quando a placa chegará na sua máxima transferência de potência.
+O valor da potência e da radiação possuem uma diferença no valor da amplitude por conta de a potência fornecida não ser uma curva linear, como consegue-se observar  na Figura 12. Onde a máxima potência fornecida será quando tiver uma determinada tensão Vmpp, que é quando a placa chegará na sua máxima transferência de potência.
 ![image](https://user-images.githubusercontent.com/39311424/60205146-d0c10280-9826-11e9-99fc-765aba98a8ee.png)
 
-Figura 11- Máxima potência da placa fotovoltaica
+Figura 12- Máxima potência da placa fotovoltaica
+
 
 
 

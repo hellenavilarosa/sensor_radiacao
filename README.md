@@ -5,7 +5,7 @@ Este projeto tem como objetivo o desenvolvimento de um sensor de radiação sola
 # Especificações do Projeto
 
 * Monitorar a radiação solar medida pelo sensor para comparação com a potência gerada pela placa fotovoltaica, e assim verificar se a placa fotovoltaica está suja.
-* Desenvolver um circuito de baixo custo, que não precise de muita manutenção.
+* Desenvolver um sensor de baixo custo, que não precise de muita manutenção.
 
 # Etapas de desenvolvimento do projeto 
 
@@ -125,6 +125,12 @@ Com o painel sujo, tem como resultado o gráfico da Figura 12. Neste gráfico ob
 ![sujo](https://user-images.githubusercontent.com/39311424/60206596-5befc780-982a-11e9-8df1-614f1af37348.png)
 
 Figura 14- Gráfico de radiação e potência do painel fotovoltaico sujo
+
+## AUTORES
+* Hellen Ávila Rosa 
+* Letícia de Oliveira Nunes
+
+## BIBLIOGRAFIA
 
 
 

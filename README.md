@@ -99,11 +99,24 @@ Para que fosse possível obter resultados satisfatórios, utilizou-se um RTC(Rea
 Ou seja, a cada 30 segundos é realizado uma média móvel de 8 valores adquiridos pelo ADC do microcontrolador (que representam os valores do sensor de radiação) e após isso é gravado em uma planilha no cartão de memória o valor dos ADCs e o horário. Com isso obtém-se uma planilha com os dados de radiação e potência da placa fotovoltaica. 
 
 FOTO DA PLAQUINHA
+Figura 9- Foto da placa
 
 Para que fosse possível obter os dados da potência da placa fotovoltaica, utilizou como carga um circuito composto por 3 resistores em série: 2 resistores no valor de 20 ohms e um no valor de 3,19 ohms. Sendo assim, foi medido a tensão em cima do resistor de 3,19 ohms utilizando o ADC do microcontrolador e com isso obtivemos o valor da corrente deste circuito, sendo possível fazer o cálculo da potência consumida pela placa fotovoltaica. Foi medido a tensão no resistor de menor valor pois o máximo de tensão que pode ser lido pelo ADC é de 5V. 
 
 
-#RESULTADOS E COMPARAÇÕES COM A PLACA FOTOVOLTAICA
+## RESULTADOS E COMPARAÇÕES COM A PLACA FOTOVOLTAICA
+Para que fosse possível detectar se a placa fotovoltaica está suja ou não, utilizou o sensor de radiação fabricado em comparação com a potência fornecida da placa fotovoltaica. Onde muita radiação e baixa potência fornecida, conclui-se que a placa fotovoltaica está suja ou está com algum objeto em cima, atrapalhando o fornecimento de energia.
+
+Para caracterização desta aplicação, foi colocado o sensor de radiação juntamente com a placa fotovoltaica limpa para testes em um dia de sol, como resultados obteve-se o gráfico da Figura 10.
+
+![radiacao_21_06](https://user-images.githubusercontent.com/39311424/60204266-d3225d00-9824-11e9-9630-c593283e9f5b.png)
+Figura 10- Grafico potencia da placa e radiação solar
+
+
+
+
+
+
 
 --------------------------------------------
 ![IMG_20190430_121725_767](https://user-images.githubusercontent.com/38983849/57803650-49fd0e00-772f-11e9-8ed6-2437c388a44c.jpg)

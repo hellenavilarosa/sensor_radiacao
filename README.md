@@ -67,6 +67,7 @@ Utilizando o PT204C e está configuração, a  máxima radiação que ele conseg
 A estrutura física do sensor foi composta por uma placa com o circuito da Figura 1, um cano de PVC e camadas de teflon. O fototransistor foi colocado no centro de um cano de PVC de 24mm a 10mm do topo do cano como mostra a Figura 2.
 
 ![posicao_pt](https://user-images.githubusercontent.com/39311424/59780637-b4eeb700-9290-11e9-90df-bb775ca7bf03.png)
+
 Figura 6. Posição do PT204C no cano de PVC.
 
 Para que o sensor não saturasse foi utilizado um atenuador feito com teflon. Utilizou-se 24 camadas de teflon, dispostas uma em cima da outra como mostra a Figura 7, e após isso foi colocado um peso em cima deixando lá por 24h, para que saísse todo o ar entre as camadas. 
@@ -87,7 +88,9 @@ Como o sensor ficará ao ar livre optamos por colocar uma (CUPULA DE LAMPADA DE 
  A Figura 9 mostra o resultado final da produção do sensor, onde uma case vedada com silicone foi utilizada para armazenar o microcontrolador e a bateria utilizada, para que estes também ficassem protegidos da chuva. 
 
 
-![sensro_cortado](https://user-images.githubusercontent.com/39311424/60203386-e7655a80-9822-11e9-9db4-7921280c8a4a.jpg)Figura 9. Protótipo Sensor de Radiação.
+![sensro_cortado](https://user-images.githubusercontent.com/39311424/60203386-e7655a80-9822-11e9-9db4-7921280c8a4a.jpg)
+
+Figura 9. Protótipo Sensor de Radiação.
 
 
 
@@ -110,7 +113,15 @@ Para que fosse possível detectar se a placa fotovoltaica está suja ou não, ut
 Para caracterização desta aplicação, foi colocado o sensor de radiação juntamente com a placa fotovoltaica limpa para testes em um dia de sol, como resultados obteve-se o gráfico da Figura 10.
 
 ![radiacao_21_06](https://user-images.githubusercontent.com/39311424/60204266-d3225d00-9824-11e9-9630-c593283e9f5b.png)
+
 Figura 10- Grafico potencia da placa e radiação solar
+
+Este gráfico da Figura 10 foi composto por valores do ADC do microcontrolador (de 0 a 1024), a cada 10 segundos o microcontrolador grava no cartão de memória a leitura da radiação e da potência da placa fotovoltaica. Onde a curva em azul representa a potência e em vermelho a radiação. Neste gráfico o painel fotovoltaico estava limpo, sendo assim, pode-se perceber que a potência fornecida é maior do que a radiação medida pelo sensor. 
+
+O valor da potência e da radiação possuem uma diferença no valor da amplitude por conta de a potência fornecida não ser uma curva linear, como consegue-se observar  na Figura 11. Onde a máxima potência fornecida será quando tiver uma determinada tensão Vmpp, que é quando a placa chegará na sua máxima transferência de potência.
+![image](https://user-images.githubusercontent.com/39311424/60205146-d0c10280-9826-11e9-99fc-765aba98a8ee.png)
+
+Figura 11- Máxima potência da placa fotovoltaica
 
 
 

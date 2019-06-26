@@ -86,8 +86,7 @@ Figura 8. Sensor com atenuador de teflon.
 Como o sensor ficará ao ar livre optamos por colocar uma (CUPULA DE LAMPADA DE LED????NAO SEI O NOME DISSO) vedada com silicone para proteger o sensor da chuva e da sujeira que poderia ficar acumulada no teflon. 
  A Figura 9 mostra o resultado final da produção do sensor, onde uma case vedada com silicone foi utilizada para armazenar o microcontrolador e a bateria utilizada, para que estes também ficassem protegidos da chuva. 
 
-![cupula_sensor](https://user-images.githubusercontent.com/39311424/59786510-ca1e1280-929d-11e9-92bc-f13df9cfdb1d.png)
-
+![Sensor](https://user-images.githubusercontent.com/39311424/60203172-7a51c500-9822-11e9-948d-76bda6f5c98b.jpg)
 Figura 9. Protótipo Sensor de Radiação.
 
 
@@ -103,25 +102,10 @@ FOTO DA PLAQUINHA
 
 Para que fosse possível obter os dados da potência da placa fotovoltaica, utilizou como carga um circuito composto por 3 resistores em série: 2 resistores no valor de 20 ohms e um no valor de 3,19 ohms. Sendo assim, foi medido a tensão em cima do resistor de 3,19 ohms utilizando o ADC do microcontrolador e com isso obtivemos o valor da corrente deste circuito, sendo possível fazer o cálculo da potência consumida pela placa fotovoltaica. Foi medido a tensão no resistor de menor valor pois o máximo de tensão que pode ser lido pelo ADC é de 5V. 
 
+
+#RESULTADOS E COMPARAÇÕES COM A PLACA FOTOVOLTAICA
+
 --------------------------------------------
-
-
-![arduino_uno_r3_-_cabo_usb_-_design_italy](https://user-images.githubusercontent.com/38983849/57801620-795d4c00-772a-11e9-94aa-d10dd6a0a4a1.jpg)
-
-Figura 7. Arduino UNO.
-
-![rtc](https://user-images.githubusercontent.com/38983849/57801611-75c9c500-772a-11e9-8361-6e29b61a50e9.jpg)
-
-Figura 8. RTC.
-
-![716up2f1W4L _SX425_](https://user-images.githubusercontent.com/38983849/57802628-cb06d600-772c-11e9-9872-bbace843cc2c.jpg)
-
-Figura 9. SD CARD.
-
-![photo_2019-05-15_16-02-15](https://user-images.githubusercontent.com/38983849/57803374-a27fdb80-772e-11e9-9c78-62f6486b7f57.jpg)
-
-Figura 10. Sensor de radiação.
-
 ![IMG_20190430_121725_767](https://user-images.githubusercontent.com/38983849/57803650-49fd0e00-772f-11e9-8ed6-2437c388a44c.jpg)
 
 Figura 11. Teste do sensor de radiação.

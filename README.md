@@ -86,8 +86,8 @@ Figura 8. Sensor com atenuador de teflon.
 Como o sensor ficará ao ar livre optamos por colocar uma (CUPULA DE LAMPADA DE LED????NAO SEI O NOME DISSO) vedada com silicone para proteger o sensor da chuva e da sujeira que poderia ficar acumulada no teflon. 
  A Figura 9 mostra o resultado final da produção do sensor, onde uma case vedada com silicone foi utilizada para armazenar o microcontrolador e a bateria utilizada, para que estes também ficassem protegidos da chuva. 
 
-![Sensor](https://user-images.githubusercontent.com/39311424/60203172-7a51c500-9822-11e9-948d-76bda6f5c98b.jpg)
-Figura 9. Protótipo Sensor de Radiação.
+
+![sensro_cortado](https://user-images.githubusercontent.com/39311424/60203386-e7655a80-9822-11e9-9db4-7921280c8a4a.jpg)Figura 9. Protótipo Sensor de Radiação.
 
 
 

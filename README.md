@@ -17,16 +17,6 @@ Este projeto dividiu-de em (QUANTOS?) etapas, sendo elas:
 5. Desenvolvimento do software para aquisição de dados advindos do sensor.
 6. Integração da sensor e o microcontrolador com a placa fotovoltaica para aquisição de dados.
 7. Finalização, testes e deferimento do projeto.
-
-## Table of Contents 
-1. [Sensor de radiação](#register-convention)
-	* [Integer Register Convention](#integer-register-convention)
-	* [Floating-point Register Convention](#floating-point-register-convention)
-2. [Procedure Calling Convention](#procedure-calling-convention)
-	* [Integer Calling Convention](#integer-calling-convention)
-	* [Hardware Floating-point Calling Convention](#hardware-floating-point-calling-convention)
-  
-
  
  ## <a name=default-abis-and-c-type-sizes></a> Sensor de Radiação Solar 
 Placas fotovoltaicas estão sempre em desenvolvimento e avanços, uma delas é a inserção de sensores que possam captar a radiação para verificar se o painel está fornecendo a energia máxima. Fatores externos podem alterar a eficiência de um painel, e um fator bastante importante que tem sido deixado de lado é o "fator sujeira". Elementos como o ácaro, folhas, lama, restos de seres vivos e entre outros, podem formar uma camada de sujeira com o passar do tempo necessitando assim manutenção periódica do painel.
@@ -93,9 +83,6 @@ Como o sensor ficará ao ar livre optamos por colocar uma (CUPULA DE LAMPADA DE 
 Figura 9. Protótipo Sensor de Radiação.
 
 
-
-
-
 ## SOFTWARE
 Para aquisição de dados foi desenvolvido um código em C utilizando o microcontrolador ATMEGA328P. Utilizando o conversor analógico - digital do microcontrolador, foi possível adquirir os resultados do sensor de radiação e da potência da placa fotovoltaica. 
 Para que fosse possível obter resultados satisfatórios, utilizou-se um RTC(Real Time Clock) para que ficasse salvo em qual horário foi adquirido o valor do sensor de radiação, e um módulo com cartão de memória para salvar estes dados. 
@@ -114,19 +101,30 @@ Para caracterização desta aplicação, foi colocado o sensor de radiação jun
 
 ![limpo](https://user-images.githubusercontent.com/39311424/60206261-7c6b5200-9829-11e9-9848-ad91c753ccd0.png)
 
-Figura 11- Testes com o painel fotovoltaico limpo
+Figura 10- Testes com o painel fotovoltaico limpo
 
-![radiacao_21_06](https://user-images.githubusercontent.com/39311424/60204266-d3225d00-9824-11e9-9630-c593283e9f5b.png)
+![limpo_21_06](https://user-images.githubusercontent.com/39311424/60206735-b0934280-982a-11e9-8ae6-7e56d5ee6eec.png)
 
 Figura 11- Grafico potencia da placa e radiação solar
 
-Este gráfico da Figura 11 foi composto por valores do ADC do microcontrolador (de 0 a 1024), a cada 10 segundos o microcontrolador grava no cartão de memória a leitura da radiação e da potência da placa fotovoltaica. Onde a curva em azul representa a potência e em vermelho a radiação. Neste gráfico o painel fotovoltaico estava limpo, sendo assim, pode-se perceber que a potência fornecida é maior do que a radiação medida pelo sensor. 
+Este gráfico da Figura 11 foi composto por valores do ADC do microcontrolador (de 0 a 1024), a cada 10 segundos o microcontrolador grava no cartão de memória a leitura da radiação e da potência da placa fotovoltaica. Onde a curva em azul representa a potência e em vermelho a radiação. Neste gráfico o painel fotovoltaico estava limpo, sendo assim, pode-se perceber que a radiação medida pelo sensor é um pouco maior do potência fornecida pela placa. 
 
-O valor da potência e da radiação possuem uma diferença no valor da amplitude por conta de a potência fornecida não ser uma curva linear, como consegue-se observar  na Figura 12. Onde a máxima potência fornecida será quando tiver uma determinada tensão Vmpp, que é quando a placa chegará na sua máxima transferência de potência.
+O valor da potência e da radiação possuem uma diferença no valor da amplitude por conta de a potência fornecida não ser uma curva linear, como consegue-se observar  na Figura 12. Onde a máxima potência fornecida acontecerá quando tiver uma determinada tensão Vmpp, que ocorre quando a placa chega a sua máxima transferência de potência.
 ![image](https://user-images.githubusercontent.com/39311424/60205146-d0c10280-9826-11e9-99fc-765aba98a8ee.png)
 
 Figura 12- Máxima potência da placa fotovoltaica
 
+Após os testes com a placa fotovoltaica limpa, foi colocado terra e folhas em cima do painel, para simular um painel sujo e obter os resultados para caracterização desta aplicação. 
+
+![PainelSujo21-06-2019](https://user-images.githubusercontent.com/39311424/60206416-d8ce7180-9829-11e9-9f0e-03e060141dea.jpg)
+
+Figura 13- Painel fotovoltaico sujo
+
+Com o painel sujo, tem como resultado o gráfico da Figura 12. Neste gráfico observa-se que a potência fornecida é maior do que  a radiação medida pelo sensor. (EXPLICAR O PQQQQQ?????)
+
+![sujo](https://user-images.githubusercontent.com/39311424/60206596-5befc780-982a-11e9-8df1-614f1af37348.png)
+
+Figura 14- Gráfico de radiação e potência do painel fotovoltaico sujo
 
 
 

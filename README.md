@@ -9,7 +9,7 @@ Este projeto tem como objetivo o desenvolvimento de um sensor de radiação sola
 
 # Etapas de desenvolvimento do projeto 
 
-Este projeto dividiu-de em (QUANTOS?) etapas, sendo elas:
+Este projeto dividiu-de em 7 etapas, sendo elas:
 1. Análise bibliográfica sobre energia fotovoltaica e radiação solar, averiguando informações sobre modelos de sensores que pudessem ter baixo custo.
 2. Escolha da case e dos componentes a serem usados no projeto.
 3. Planejamento de comunicação entre o microcontrolador e o sensor vinculado à placa fotovoltaica.
@@ -116,7 +116,7 @@ Figura 12- Máxima potência da placa fotovoltaica
 
 Após os testes com a placa fotovoltaica limpa, foi colocado terra e folhas em cima do painel, para simular um painel sujo e obter os resultados para caracterização desta aplicação. 
 
-![PainelSujo21-06-2019](https://user-images.githubusercontent.com/39311424/60206416-d8ce7180-9829-11e9-9f0e-03e060141dea.jpg)
+![sujo__](https://user-images.githubusercontent.com/39311424/60207354-0c120000-982c-11e9-9776-ccd2115a586a.png)
 
 Figura 13- Painel fotovoltaico sujo
 

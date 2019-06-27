@@ -69,7 +69,7 @@ Figura 7. Camadas de teflon.
 Após colocar as camadas de teflon no cano de PVC, obtivemos como resultado a Figura 8. Com as camadas de teflon obtivemos uma atenuação de 92%, ou seja o máximo de radiação que ele conseguirá medir sem saturar é de 1242 W/m², o suficiente para a cidade de Florianópolis-SC.
 Como suporte para o sensor de radiação utilizou-se uma tampa de cano de PVC com um furo central onde foi colocado o sensor.
 
-![IMG_1798](https://user-images.githubusercontent.com/38983849/57803105-f50cc800-772d-11e9-8c53-bc7c3d565710.JPG)
+![cupula_](https://user-images.githubusercontent.com/39311424/60282150-a3cf2700-98dc-11e9-80b7-06efd4569401.png)
 
 Figura 8. Sensor com atenuador de teflon.
 

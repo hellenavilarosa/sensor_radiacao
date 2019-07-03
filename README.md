@@ -128,7 +128,8 @@ Figura 15. Gráfico de radiação e potência do painel fotovoltaico sujo.
 
 Como validação de resultados, foi realizada mais uma medida de um dia de sol verificada na Figura 16. Parte do dia pode-se ver os o gráfico com valores próximos da radiação e da potência, onde não havia nada em cima da placa(limpa). Logo à frente há um decaimento muito abrupto da potência gerada pela placa, nesse momento foi colocado o módulo do sensor em cima da mesma para que uma parte maior da placa ficasse coberta, desse modo várias células ficam tampadas fazendo com que não a potência entregue seja muito menor. 
 
-COLOCAR A FIGURA AQUI
+![Screenshot_1](https://user-images.githubusercontent.com/38983849/60624033-a0dfa500-9dba-11e9-99a7-51cf570f94f2.jpg)
+Figura 16. Gráfico de radiação e potência do painel fotovoltaico com/sem o módulo.
 
 ## AUTORES
 * Hellen Ávila Rosa 

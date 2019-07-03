@@ -126,10 +126,12 @@ Com o painel sujo, tem-se como resultado o gráfico da Figura 14. Neste gráfico
 
 Figura 15. Gráfico de radiação e potência do painel fotovoltaico sujo.
 
-Como validação de resultados, foi realizada mais uma medida de um dia de sol verificada na Figura 16. Parte do dia pode-se ver os o gráfico com valores próximos da radiação e da potência, onde não havia nada em cima da placa(limpa). Logo à frente há um decaimento muito abrupto da potência gerada pela placa, nesse momento foi colocado o módulo do sensor em cima da mesma para que uma parte maior da placa ficasse coberta, desse modo várias células ficam tampadas fazendo com que não a potência entregue seja muito menor. 
+Para validação de resultados, foi realizada mais uma medida com um dia de sol. Parte do dia pode-se ver os o gráfico com valores próximos da radiação e da potência, onde não havia nada em cima da placa(limpa). Logo à frente há um decaimento muito abrupto da potência gerada pela placa, nesse momento foi colocado o módulo do sensor em cima da mesma para que uma parte maior da placa ficasse coberta, desse modo várias células ficaram tampadas fazendo com que a potência entregue seja muito menor, sendo possível ser verificada na Figura 16. 
 
 ![Screenshot_1](https://user-images.githubusercontent.com/38983849/60624033-a0dfa500-9dba-11e9-99a7-51cf570f94f2.jpg)
 Figura 16. Gráfico de radiação e potência do painel fotovoltaico com/sem o módulo.
+
+Com sucesso pode-se verificar que o sensor tem uma excelente aquisição e poder de comparação, este protótipo também conseguiu chegar à um custo significantemente menor que outros sensores disponíveis no mercado, chegando à um valor aproximado de R$ 50,00 ainda não sendo contabilizados a calibração e sua devida certificação para venda. 
 
 ## AUTORES
 * Hellen Ávila Rosa 
@@ -142,9 +144,6 @@ BARBOSA, Elismar Ramos; FARIA, Merlim dos Santos F.; GONTIJO, Fabio de Brito. In
 Hidalgo, F. G., Martinez, R. F., & Vidal, E. F. (2013). Design of a low-cost sensor for solar irradiance. Antofagasta Energetic Develpment Center, University of Antofagasta, Antofagasta, Chile, 2013.
 
 MEDUGU, Elismar Ramos; BURARI, F. W.; ABDULAZEEZ A. A. Construction of a reliable model pyranometer for irradiance measurements. Department of Pure and Applied Physics, Adamawa State University, Mubi, Nigeria, 2010.
-
-
-
 
 --------------------------------------------
 ![IMG_20190430_121725_767](https://user-images.githubusercontent.com/38983849/57803650-49fd0e00-772f-11e9-8ed6-2437c388a44c.jpg)

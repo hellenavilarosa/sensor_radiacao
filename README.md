@@ -134,8 +134,9 @@ Figura 16. Gráfico de radiação e potência do painel fotovoltaico com/sem o m
 Com sucesso pode-se verificar que o sensor tem uma excelente aquisição e poder de comparação, este protótipo também conseguiu chegar à um custo significantemente menor que outros sensores disponíveis no mercado, chegando à um valor aproximado de R$ 50,00 ainda não sendo contabilizados a calibração e sua devida certificação para venda. 
 
 ## AUTORES
-* Hellen Ávila Rosa 
-* Letícia de Oliveira Nunes
+*  NUNES, Letícia de Oliveira .
+*  ROSA, Hellen Ávila.
+
 
 ## BIBLIOGRAFIA
 

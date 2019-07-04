@@ -15,7 +15,7 @@ Este projeto dividiu-de em 7 etapas, sendo elas:
 3. Planejamento de comunicação entre o microcontrolador e o sensor vinculado à placa fotovoltaica.
 4. Desenvolvimento do sensor.
 5. Desenvolvimento do software para aquisição de dados advindos do sensor.
-6. Integração da sensor e o microcontrolador com a placa fotovoltaica para aquisição de dados.
+6. Integração do microcontrolador com a placa fotovoltaica e o sensor para aquisição de dados.
 7. Finalização, testes e deferimento do projeto.
  
  ## <a name=default-abis-and-c-type-sizes></a> Sensor de Radiação Solar 

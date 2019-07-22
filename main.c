@@ -18,14 +18,14 @@
 #include <string.h>
 
 
-#define HORA		14
-#define MINUTO		42
+#define HORA		15
+#define MINUTO		35
 #define SEGUNDO		00
 
 #define ANO			19
 #define MES			6
-#define DIA			4
-#define DIA_SEMANA	2
+#define DIA			19
+#define DIA_SEMANA	4
 
 
 #define LED_PIN	PB0
@@ -56,10 +56,15 @@ int main(){
 	FATFS card;
 	FIL file;
 	char string[64];
-	uint16_t bytesWritten,result=0,n=0,corr_n=0,corr_d=0;
-	//sensor efeito hall
-	uint32_t tens_hall=0,corrente_hall=0,AD_hall=0;
 
+	uint16_t bytesWritten, result=0, n=0;
+
+	//sensor efeito hall
+	uint16_t AD_hall=0;
+
+	//tensao
+	uint32_t tensao_res=0, potencia_res=0, corrente_res=0, pot1=0, pot2=0;
+	uint16_t AD_radiacao=0;
 	memset(string, 0, sizeof(string));
 
 	// TWI Init
@@ -74,15 +79,15 @@ int main(){
 
 	// Enable Global Interrupts
 	sei();
-	printf("sai interrupt");
 
 	// RTC Configuration
 	ds1307SetControl(DS1307_COUNTING_RESUME, DS1307_CLOCK_1HZ, DS1307_FORMAT_24_HOURS);
-//	ds1307SetDate(ANO, MES, DIA, DIA_SEMANA);
-//	ds1307SetTime(HORA, MINUTO, SEGUNDO, DS1307_24);
-	printf("sai ds");
 
+	//comentar depois de gravar
+	//ds1307SetDate(ANO, MES, DIA, DIA_SEMANA);
+	//ds1307SetTime(HORA, MINUTO, SEGUNDO, DS1307_24);
 	// Mounting SD card
+
 	res = f_mount(0, &card);
 	if(res != FR_OK){
 		printf("->SD card not mounted => error = %d\n \r", res);
@@ -91,10 +96,12 @@ int main(){
 	}
 
 	ds1307SetControl(DS1307_COUNTING_NO_CHANGE,DS1307_CLOCK_NO_CHANGE, DS1307_FORMAT_24_HOURS );
-	printf("antes res ");
+
+
+	//printf("antes res ");
 
 	res = f_open(&file, "Radiacao.csv", FA_WRITE | FA_CREATE_ALWAYS);
-	printf("depois res");
+	//printf("depois res");
 
 	if(res != FR_OK){
 		printf("->File not created => error = %d \n \r", res);
@@ -106,35 +113,32 @@ int main(){
 
 
 	while(1){
+		//sensor efeito hall
+		_delay_ms(10000); // a cada 30 segundos
+		ds1307GetTime(&(dados_t.tempo_t.hora),&(dados_t.tempo_t.minuto) ,&(dados_t.tempo_t.segundo),&(dados_t.tempo_t.am_pm)); // define  funfa??
 
-			ds1307GetTime(&(dados_t.tempo_t.hora),&(dados_t.tempo_t.minuto) ,&(dados_t.tempo_t.segundo),&(dados_t.tempo_t.am_pm)); // define  funfa??
-			//sensor efeito hall
-			AD_hall=(dados_t.dado_corrente>>3);
-			printf("ADC_hall: %d\n", AD_hall);
+		AD_hall = (dados_t.dado_tensao>>3);
+		printf("ad_hall: %d\n", AD_hall);
+		AD_radiacao = (dados_t.dado_radiacao>>3);
+		printf("ad_rad: %d\n", AD_radiacao);
 
-			tens_hall=(5*AD_hall*1000)/1024;
+		n = snprintf(string, 64, "%d; %d; %d:%d:%d\n", AD_hall, AD_radiacao, dados_t.tempo_t.hora, dados_t.tempo_t.minuto, dados_t.tempo_t.segundo);
+		printf("SNPRINTF: %s\n", string);
+		result = f_write(&file, string, strlen(string), &bytesWritten);
+		//3.19 resistor que esta medindo em cima 10+10 em serie
 
-			printf("tens_hall: %d\n", tens_hall);
-			corrente_hall=((2485-tens_hall)*500)/33;
-			printf("corrente_hall: %d\n", corrente_hall);
-			corr_n=(corrente_hall/1000);
-			corr_d=(corrente_hall%1000);
-			// Creating a file
-			n = snprintf(string, 64, "%d; %d.%d; %d:%d:%d\n",(dados_t.dado_radiacao>>3),corr_n ,corr_d, dados_t.tempo_t.hora,dados_t.tempo_t.minuto, dados_t.tempo_t.segundo);
+		tensao_res =( AD_hall*5)/1024;
+		corrente_res = (tensao_res*10)/3.19; // multiplicada por 10
+		potencia_res = (10*corrente_res*corrente_res)+(10*corrente_res*corrente_res)+(3.19*corrente_res*corrente_res);
+		pot1 = potencia_res/10;
+		pot2 = potencia_res%10;
 
-			printf("SNPRINTF: %s\n", string);
-			result = f_write(&file, string, strlen(string), &bytesWritten);
-			_delay_ms(30000); // a cada 30 segundos
-
-			if(result!=0){
-				printf("fr_ok = %d",result);
-			}
-			f_sync(&file);
-
+		if(result!=0){
+			printf("fr_ok = %d",result);
+		}
+		f_sync(&file);
 	}
-
 }
-
 
 
 

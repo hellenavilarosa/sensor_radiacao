@@ -79,7 +79,7 @@ ISR(ADC_vect)
 
 		}
 		dados_t.dado_radiacao = sum_ADC0;// sensor radiaçao->string
-		dados_t.dado_corrente=sum_ADC1;
+		dados_t.dado_tensao=sum_ADC1;
 
 		GPIO_CplBit(GPIO_B, 1);
 		CPL_BIT(ADCS->AD_MUX, 0);
@@ -122,6 +122,6 @@ void hardware_init(){
 	PORTB = 0b00000010;
 	//_delay_ms(500);
 	/* PORTB como saída */
-		GPIO_B->DDR = 0xff;
+	GPIO_B->DDR = 0xff;
 }
 

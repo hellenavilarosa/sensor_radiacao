@@ -19,7 +19,7 @@ struct{
 		uint8_t segundo;
 		ds1307TimeAbbreviation_t am_pm;
 
-		}tempo_t;
-	}dados_t;
+	}tempo_t;
+}dados_t;
 
 #endif /* SENSOR_H_ */
